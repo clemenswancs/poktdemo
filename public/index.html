@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeFi Dashboard</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+</head>
+<body>
+    <h1>DeFi Dashboard</h1>
+    
+    <h2>Connect Wallet</h2>
+    <button id="connectWallet">Connect MetaMask</button>
+    <p id="walletAddress"></p>
+    <p id="walletBalance"></p>
+
+    <h2>Balance Checker</h2>
+    <select id="networkSelect">
+        <option value="infura">Infura</option>
+        <option value="pokt">POKT</option>
+    </select>
+    <input type="text" id="addressInput" placeholder="Enter Ethereum address" size="100">
+    <button id="getBalance">Get Balance</button>
+    <p id="checkedBalance"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>

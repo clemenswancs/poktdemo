@@ -1,0 +1,20 @@
+{
+  "name": "defidash2",
+  "version": "1.0.0",
+  "main": "dashboard.js",
+  "scripts": {
+    "start": "node dashboard.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@metamask/sdk": "^0.26.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.1",
+    "express": "^4.19.2",
+    "web3": "^4.10.0"
+  }
+}

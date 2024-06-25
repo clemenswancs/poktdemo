@@ -1,0 +1,75 @@
+# DeFi Dashboard
+
+A simple DeFi dashboard built with Node.js, Express, and Ethers.js that allows users to connect their MetaMask wallet and check Ethereum balances.
+
+## Features
+
+- Connect MetaMask wallet
+- Display connected wallet address and balance
+- Check balance of any Ethereum address using Infura or POKT network
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v12.0.0 or later)
+- npm (usually comes with Node.js)
+- MetaMask browser extension
+
+## Installation
+
+1. Clone the repository:
+
+git clone https://github.com/yourusername/defi-dashboard.git
+cd defi-dashboard
+
+2. Install the dependencies:
+
+npm install
+
+3. Create a `.env` file in the root directory with the following content:
+
+
+PORT=3000
+INFURA_API_KEY=<YOUR_INFURA_API_KEY>
+POKT_API_KEY=
+
+Replace `YOUR_INFURA_API_KEY` and `YOUR_POKT_API_KEY` with your actual API keys.
+Note: I'm using the public endpoint for POKT hosted by Nodies.
+
+## Usage
+
+1. Start the server:
+
+node server.js
+
+2. Open your web browser and navigate to `http://localhost:3000`
+
+3. Use the "Connect MetaMask" button to connect your wallet
+
+4. Use the balance checker to check the balance of any Ethereum address
+
+## Project Structure
+
+- `server.js`: Express server setup and API endpoints
+- `public/index.html`: Main HTML file for the frontend
+- `public/app.js`: Frontend JavaScript for interacting with MetaMask and the server API
+- 'webmultiplexer.js': Showing an example of how I would implement an automated multiplexer
+
+## Technologies Used
+
+- Backend:
+- Node.js
+- Express
+- Ethers.js
+- Frontend:
+- HTML
+- JavaScript
+- Ethers.js
+- MetaMask detection provider
+
+## Acknowledgments
+
+- Ethers.js for Ethereum interactions
+- MetaMask SDK for wallet connectivity
+- Infura and POKT for Ethereum network access
